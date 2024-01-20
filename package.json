@@ -2,8 +2,9 @@
   "name": "aircon",
   "version": "1.0.0",
   "description": "Aircon - connect your airpods with ease",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +12,7 @@
     "url": "github.com/securesvet/aircon"
   },
   "author": "Sviatoslav M",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^28.1.4"
   }
