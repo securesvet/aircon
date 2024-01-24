@@ -1,8 +1,11 @@
 'use strict';
 
+import React from 'react';
+
 const electronApp = require('electron').app;
 const electronBrowserWindow = require('electron').BrowserWindow;
 const electronIpcMain = require('electron').ipcMain;
+
 
 const nodePath = require("path");
 const nodeChildProcess = require('child_process');
