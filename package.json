@@ -1,19 +1,46 @@
 {
   "name": "aircon",
-  "version": "1.0.0",
-  "description": "Aircon - connect your airpods with ease",
-  "main": "main.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "main": "electron/main.js",
+  "productName": "Aircon",
+  "homepage": "./",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron": "electron .",
+    "start": "export BROWSER=none && react-scripts start",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/securesvet/aircon"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Sviatoslav M",
-  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "electron": "^28.1.4"
+    "electron": "^28.2.2"
   }
 }
