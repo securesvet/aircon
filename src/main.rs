@@ -1,6 +1,3 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // hide console window on Windows in release
-#![allow(rustdoc::missing_crate_level_docs)] // it's an example
-
 use eframe::egui;
 
 fn main() -> eframe::Result {
@@ -29,8 +26,8 @@ struct MyApp {
 impl Default for MyApp {
     fn default() -> Self {
         Self {
-            name: "Arthur".to_owned(),
-            age: 42,
+            name: "Sviatoslav".to_owned(),
+            age: 22,
         }
     }
 }
