@@ -1,5 +1,7 @@
 # Aircon
 
+![image](./static/airpods.png)
+
 An Application for godlike UX with bluetooth devices for Linux, especially Apple airpods
 
 ## Dependencies
